@@ -39,10 +39,8 @@
                     const numericDiffrence = arrayLength - binaryArray.length;
 
                     for (let i = 0; i < numericDiffrence; i++) {
-                        binaryArray.push("0");
+                        binaryArray.unshift("0");
                     }
-
-                    binaryArray.reverse();
 
                     binaryArray.forEach((item, index) => {
                         assignClassToSelector(item, index);
